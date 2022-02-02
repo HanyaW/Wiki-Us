@@ -417,7 +417,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil Di Aktifkan**\n━━━━━━\n➠ **Bot Version:** `V8.0`\n➠ **Ketik** `.alive` **untuk Mengecek Bot**\n━━━━━━\n➠ **Group:** @WikiTapiGroup\n━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**⚡Wiki-Userbot⚡ Berhasil Di Aktifkan**\n━━━━━━\n➠ **Bot Version:** `V5.0`\n➠ **Ketik** `.alive` **untuk Mengecek Bot**\n━━━━━━\n➠ **Group:** @WikiTapiGroup\n━━━━━━")
     return
 
 with bot:
@@ -945,7 +945,7 @@ with bot:
                 result = builder.photo(
                     file=wikilogo,
                     link_preview=False,
-                    text=f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 8.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
+                    text=f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
