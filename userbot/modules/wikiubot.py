@@ -25,37 +25,8 @@ async def typewriter(typew):
                      "`\n┻┳|￣  )`"
                      "`\n┳ﾐ(￣ ／`"
                      "`\n┻┳T￣|`"
-                     "\n**Permisi Seleb Mau Nimbrung Kaka..**")
+                     "\n**Permisi Numpang Cari Bansos..**")
 
-
-@register(outgoing=True, pattern='^.bf(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    await typew.edit("**Panjul Kang roasting☑️**")
-    await typew.edit("**Panjul Kang roasting✅**")
-    sleep(3)
-    await typew.edit("**Farhan Ribet☑️**")
-    await typew.edit("**Farhan Ribet✅**")
-    sleep(3)
-    await typew.edit("**Papoy Buaya Betina☑️**")
-    await typew.edit("**Papoy Buaya Betina✅**")
-    sleep(3)
-    await typew.edit("**Gita Bawel☑️**")
-    await typew.edit("**Gita Bawel✅**")
-    sleep(3)
-    await typew.edit("**April Badgirl☑️**")
-    await typew.edit("**April Badgirl✅**")
-    sleep(3)
-    await typew.edit("**Nigel Wibu☑️**")
-    await typew.edit("**Nigel Wibu✅**")
-    sleep(3)
-    await typew.edit("**Kiaa Cantik Banget☑️**")
-    await typew.edit("**Kiaa Cantik Banget✅**")
-    sleep(3)
-    await typew.edit("**Manda Nak erpeh☑️**")
-    await typew.edit("**Manda Nak erpeh✅**")
-    sleep(3)
-    await typew.edit("**FATUR PALING TAMPAN!**")
 
 @register(outgoing=True, pattern='^.pbl(?: |$)(.*)')
 async def typewriter(typew):
