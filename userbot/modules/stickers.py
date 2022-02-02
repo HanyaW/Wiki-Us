@@ -26,7 +26,8 @@ from userbot.events import register
 
 KANGING_STR = [
     "Aku minta tikel mu ya 😙",
-    "Tikel siapa si ini emeusssshh aku minta ya 🥺",
+    "Ehh tikelnya gemoy minta ya🥺",
+    "Wah bagus juga culik ah ni tikel",
 ]
 
 
@@ -55,7 +56,7 @@ async def kang(args):
                 in message.media.document.attributes
             ):
                 emoji = message.media.document.attributes[1].alt
-                if emoji != "🔰":
+                if emoji != "😑":
                     emojibypass = True
         elif "tgsticker" in message.media.document.mime_type:
             await args.edit(f"`{random.choice(KANGING_STR)}`")
@@ -72,12 +73,12 @@ async def kang(args):
         else:
             return await args.edit("`Mohon Maaf, File Tidak Didukug!`")
     else:
-        return await args.edit("`Mohon Maaf, Saya Gagal Mengambil Sticker Ini!`")
+        return await args.edit("`Maaf hiks😢, Gagal culi tikel tuan🥺!`")
 
     if photo:
         splat = args.text.split()
         if not emojibypass:
-            emoji = "🔰"
+            emoji = "😑"
         pack = 1
         if len(splat) == 3:
             pack = splat[2]  # User sent both
@@ -174,9 +175,9 @@ async def kang(args):
                         # Ensure user doesn't get spamming notifications
                         await bot.send_read_acknowledge(conv.chat_id)
                         return await args.edit(
-                            "`Sticker telah dibuat ke pack baru !"
+                            "`Tikel telah dibuat ke pack baru !"
                             "\nIni Pack Yang Baru Saja Anda Buat !"
-                            f"\nTekan [⚡Klik Disini⚡](t.me/addstickers/{packname}) Untuk Melihat Sticker Anda",
+                            f"\nTekan [Klik Cini Tuan](t.me/addstickers/{packname}) Untuk Melihat Tikelnya",
                             parse_mode="md",
                         )
                 if is_anim:
@@ -243,7 +244,7 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            f"**Sticker Berhasil Ditambahkan**\n      **>>> [Tekan Disini](t.me/addstickers/{packname}) <<<**\n**Untuk Melihat Sticker Anda**",
+            f"**Tikel Berhasil Ditambahkan**\n      **>>> [Tekan Cini Tuan](t.me/addstickers/{packname}) <<<**\n**Untuk Melihat Tikelnya**",
             parse_mode="md",
         )
 
