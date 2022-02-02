@@ -18,7 +18,7 @@ from userbot.events import register
 
 absen = [
     "**Hadir Ganteng** 🥵",
-    "**Hadir Dior ganteng** 😎",
+    "**Hadir Wiki ganteng** 😎",
     "**Hadir Kak** 😉",
     "**Hadir Sayang** 😘",
     "**Hadir Kak Maap Telat** 🥺",
@@ -26,10 +26,10 @@ absen = [
 
 
 sayang = [
-    "hallo dior sayang 😍",
-    "hallo kak dior 😉",
-    "hadir ayang dior😘",
-    "ayangnya dior disini 🥺",
+    "hallo Wiki sayang 😍",
+    "hallo kak Wiki 😉",
+    "hadir ayang Wiki😘",
+    "ayangnya Wiki disini 🥺",
     "sayang jangan kemana mana lagi ya 🥺",
 ]
 
@@ -103,7 +103,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡ DIOR-UBOT ⚡**\n"
+        f"**Wiki-Userbot**\n"
         f"** ▹  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ▹  Uᴘᴛɪᴍᴇ  :** "
@@ -117,17 +117,15 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("**Assalamualaikum...Yesus memberkati...**")
-    await asyncio.sleep(2)
+    await pong.edit("✣")
     await pong.edit("✣✣")
     await pong.edit("✣✣✣")
     await pong.edit("✣✣✣✣")
-    await pong.edit("**YO NGENTOT!!!**")
-    await asyncio.sleep(2)
+    await pong.edit("✣✣✣✣✣")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**PONG!!!🍀**\n"
+        f"**PONG!!!😑**\n"
         f"✣ **Ping** - "
         f"`%sms` \n"
         f"✣ **Uptime** - "
@@ -153,7 +151,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡DIOR-UBOT⚡**\n"
+        f"**Wiki-Userbot**\n"
         f"➣ __Signal__    __:__ "
         f"`%sms` \n"
         f"➣ __Uptime__ __:__ "
