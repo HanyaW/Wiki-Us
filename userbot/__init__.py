@@ -70,16 +70,9 @@ if CONFIG_CHECK:
 
 # KALO NGEFORK ID DEVS NYA GA USAH DI HAPUS YA GOBLOK 😡
 DEVS = (
-    1220829364, # ganteng
-    1663258664,
-    1220829364,
-    1820233416,
-    1901321169,
-    1977874449,
-    1784606556,
-    1964264380,
-    5041451209, # huek najis 50
-    5249925905, # jo kontol najis id 50
+    1980553307,
+    2048936969,
+    2133434438,
 )
 
 # Telegram App KEY and HASH
@@ -119,9 +112,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/DIORrios285/DIOR-UBOT")
+    "https://github.com/Wiki28/Wiki-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "DIOR-UBOT")
+    "UPSTREAM_REPO_BRANCH", "Wiki-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -131,11 +124,11 @@ DB_URI = os.environ.get("DATABASE_URL", None)
 
 # OCR API key
 OCR_SPACE_API_KEY = os.environ.get(
-    "OCR_SPACE_API_KEY") or "12dc42a0ff88957"
+    "OCR_SPACE_API_KEY") or "94e4754e2c88957"
 
 # remove.bg API key
 REM_BG_API_KEY = os.environ.get(
-    "REM_BG_API_KEY") or "ihAEGNtfnVtCsWnzqiXM1GcS"
+    "REM_BG_API_KEY") or "BAbt7qxs7uZJEhmaxSa3d3PV"
 
 # Redis URI & Redis Password
 REDIS_URI = os.environ.get('REDIS_URI', None)
@@ -170,8 +163,8 @@ PM_LOGGR_BOT_API_ID = int(os.environ.get("PM_LOGGR_BOT_API_ID", "-100"))
 
 # OpenWeatherMap API Key
 OPEN_WEATHER_MAP_APPID = os.environ.get(
-    "OPEN_WEATHER_MAP_APPID") or "5ed2fcba931692ec6bd0a8a3f8d84936"
-WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", "Batam")
+    "OPEN_WEATHER_MAP_APPID") or "04379643172a90ec8c81da4f337bd3cc"
+WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", "Lombok NTB")
 
 
 # Lydia API
@@ -196,7 +189,7 @@ YOUTUBE_API_KEY = os.environ.get(
 START_WELCOME = os.environ.get("START_WELCOME", None)
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡"
+REPO_NAME = os.environ.get("REPO_NAME") or "⚡Wiki-Userbot⚡"
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -216,10 +209,10 @@ BITLY_TOKEN = os.environ.get(
     "BITLY_TOKEN") or "o_1fpd9299vp"
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "⚡Wiki-Userbot⚡")
 
 # Bot Version
-BOT_VER = os.environ.get("BOT_VER", "8.0")
+BOT_VER = os.environ.get("BOT_VER", "5.0")
 
 # Default .alive Username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -229,29 +222,29 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/b4fcaa3f9bd54d3802bcc.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/735f0224988c04db62210.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/b4fcaa3f9bd54d3802bcc.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/735f0224988c04db62210.jpg"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/fatur.285"
+IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/terserah_wiki"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/fandasupport"
+    "GROUP_LINK") or "t.me/WikiTapiGroup"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/uurfavboys"
+    "OWNER_BOT") or "t.me/Hanya_W"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✰"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⚡"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO", "⚡Wiki-Userbot⚡")
 
 LASTFM_API = os.environ.get(
     "LASTFM_API") or "73d42d9c93626709dc2679d491d472bf"
@@ -509,7 +502,7 @@ with bot:
             try:
                 tgbotusername = BOT_USERNAME
                 if tgbotusername is not None:
-                    results = await event.client.inline_query(tgbotusername, "@Dior_ubot")
+                    results = await event.client.inline_query(tgbotusername, "@WikiTapiBot")
                     await results[0].click(
                         event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
                     )
@@ -544,7 +537,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("ʀᴇᴘᴏ​",
-                                       "https://github.com/DIORrios285/DIOR-UBOT")],
+                                       "https://github.com/Wiki28/Wiki-Userbot")],
                     ]
                 )
 
@@ -555,7 +548,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"{START_WELCOME}\n\n**Powered By** : @uurfavboys\n\n",
+                    f"{START_WELCOME}\n\n**Powered By** : @Hanya_W\n\n",
                     buttons=[
                         [
                             custom.Button.inline(
@@ -566,7 +559,7 @@ with bot:
                     ]
                 )
             else:
-                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER} Nanti Kena Ghosting."
+                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.NewMessage(pattern="/ping"))
@@ -589,11 +582,11 @@ with bot:
             event.builder
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@Kayzuuuuu"):
+                    "@Hanya_W"):
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 8.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME} "
+                text = f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME} "
                 await event.edit(text,
-                                 file=diorlogo,
+                                 file=wikilogo,
                                  buttons=buttons,
                                  link_preview=False,
                                  )
@@ -611,7 +604,7 @@ with bot:
             current_page_number = int(lockpage)
             buttons = paginate_help(current_page_number, plugins, "helpme")
             await event.edit(
-                file=diorlogo,
+                file=wikilogo,
                 buttons=buttons,
                 link_preview=False,
             )
@@ -624,20 +617,20 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"❁ __Saya Adalah Dior Userbot Yang Digunakan Banyak User Telegram__.\n\n"
+                    f"❁ __Saya Adalah Wiki Userbot Yang Digunakan Banyak User Telegram__.\n\n"
                     f"❁ __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
                     f"❁ __Kelebihan Saya Banyak, Saya Mempunyai 100 lebih Modules__.\n\n"
-                    f"© @uurfavboys")
+                    f"© @Hanya_W")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [custom.Button.inline("ᴄʟᴏꜱᴇ", data="closed")],
                     ]
                 )
             else:
-                reply_pop_up_alert = f"Name : {DEFAULTUSER}\nBot Ver : 8.0\n🛠 Modules : {len(plugins)}\nBranch : DIOR-UBOT"
+                reply_pop_up_alert = f"Name : {DEFAULTUSER}\nBot Ver : 5.0\n🛠 Modules : {len(plugins)}\nBranch : Wiki-Userbot"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -651,7 +644,7 @@ with bot:
                     f"{DEFAULTUSER}Pilih dari opsi di bawah ini :")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [custom.Button.inline("ᴀʟɪᴠᴇ", data="alive")],
@@ -677,7 +670,7 @@ with bot:
                     f"Menu Lainnya ! Untuk {DEFAULTUSER}")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [custom.Button.inline("ᴜᴘᴅᴀᴛᴇ", data="pembaruan")],
@@ -703,10 +696,10 @@ with bot:
                     f"°__Menampilkan Alive Punya Kamu__.\n\n"
                     f"× `.set var ALIVE_LOGO` [**LINK**]\n"
                     f"°__Mengubah Foto Alive Kamu, Yang Kamu Inginkan__.\n\n"
-                    f"© @uurfavboys")
+                    f"© @Hanya_W")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -733,10 +726,10 @@ with bot:
                     f"°__Mengaktifkan Pmpermit Kalian Atau Disebut Pesan Otomatis__.\n\n"
                     f"× `.set pm_msg` [**REPLYCHAT**]\n"
                     f"°__Mengganti Teks Pmpermit Kamu__.\n\n"
-                    f"© @uurfavboys")
+                    f"© @Hanya_W")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -766,7 +759,7 @@ with bot:
                     f"© @uurfavboys")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -817,7 +810,7 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Pembaruan**\n\n"
-                    f"× **Pembaruan Data Untuk DIOR - UBOT, Command Untuk Pembaruan**.\n"
+                    f"× **Pembaruan Data Untuk Wiki-Userbot, Command Untuk Pembaruan**.\n"
                     f"⚒Pembaruan Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
@@ -909,7 +902,7 @@ with bot:
         async def killdabot(event):
             if event.query.user_id == uid:
                 text = (
-                    f"**Restaring DIOR-UBOT**...")
+                    f"**Restaring Wiki-Userbot**...")
                 await event.edit(
                     text,
                     file=diorlogo,
@@ -937,7 +930,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("ᴄʜᴀɴɴᴇʟ",
-                                       "t.me/fandaproject")],
+                                       "t.me/WikiTapiChannel")],
                     ]
                 )
 
@@ -959,26 +952,26 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡",
+                    "Bantuan Dari ⚡Wiki-Userbot⚡",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡",
-                    text="""𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙""",
+                    " ⚡Wiki-Userbot⚡",
+                    text="""Wiki-Userbot""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Dev",
-                                "https://t.me/uurfavboys"),
+                                "https://t.me/Hanya_W"),
 
                             custom.Button.url(
                                 "Grup",
-                                "t.me/fandasupport")],
+                                "t.me/WikiTapiGroup")],
                         [custom.Button.url(
                             "License",
-                            "https://github.com/DIORrios285/DIOR-UBOT/LICENSE")],
+                            "https://github.com/Wiki28/Wiki-Userbot/LICENSE")],
                     ],
                     link_preview=False,
                 )
