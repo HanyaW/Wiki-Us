@@ -346,7 +346,7 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "DIOR-UBOT"
+    session = "Wiki-Userbot"
 try:
     bot = TelegramClient(
         session=session,
@@ -361,8 +361,8 @@ except Exception as e:
 
 
 async def checking():
-    gocheck = str("@fandasupport")
-    checker = str("@fandaproject")
+    gocheck = str("@WikiTapiGroup")
+    checker = str("@WikiTapiChannel")
     try:
         await bot(GetSec(gocheck))
     except BaseException:
@@ -417,7 +417,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil Di Aktifkan**\n━━━━━━\n➠ **Bot Version:** `V8.0`\n➠ **Ketik** `.alive` **untuk Mengecek Bot**\n━━━━━━\n➠ **Group:** @fandasupport\n━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil Di Aktifkan**\n━━━━━━\n➠ **Bot Version:** `V8.0`\n➠ **Ketik** `.alive` **untuk Mengecek Bot**\n━━━━━━\n➠ **Group:** @WikiTapiGroup\n━━━━━━")
     return
 
 with bot:
@@ -516,7 +516,7 @@ with bot:
                     "⛔ **Kamu Tidak Diizinkan Untuk Menekan Itu**!"
                 )
 
-        diorlogo = INLINE_PIC
+        wikilogo = INLINE_PIC
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -756,7 +756,7 @@ with bot:
                     f"°__Mengubah Emoji Inline Yang Ada Di Perintah__ `.helpme`\n\n"
                     f"× `.set var INLINE_PIC` [**LINK**]\n"
                     f"°__Mengubah Foto Yang Ada Di Perintah__ `.helpme`\n\n"
-                    f"© @uurfavboys")
+                    f"© @Hanya_W")
                 await event.edit(
                     text,
                     file=wikilogo,
@@ -784,10 +784,10 @@ with bot:
                     f"Modules Name **pmbot**\n\n"
                     f"× `.set var START_WELCOME` [**TEKS**] \n"
                     f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© @uurfavboys")
+                    f"© @Hanya_W")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -814,10 +814,10 @@ with bot:
                     f"⚒Pembaruan Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
-                    f"© @uurfavboys")
+                    f"© @Hanya_W")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -845,7 +845,7 @@ with bot:
                     f"**PONG!!**\n `{ms}ms`")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -879,10 +879,10 @@ with bot:
                     f"**|**  [`{percentage}`**%**]\n"
                     f" ✠➲ **ʙᴏᴛ ᴏꜰ :** {ALIVE_NAME}  "
                     "\n╚════════════════════╝"
-                    f"© @uurfavboys")
+                    f"© @Hanya_W")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -905,7 +905,7 @@ with bot:
                     f"**Restaring Wiki-Userbot**...")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -925,7 +925,7 @@ with bot:
                     f"Closed Menu!")
                 await event.edit(
                     text,
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -943,7 +943,7 @@ with bot:
                     ""):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=diorlogo,
+                    file=wikilogo,
                     link_preview=False,
                     text=f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 8.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
                         len(dugmeler),
@@ -1008,9 +1008,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("ꜱᴜᴘᴘᴏʀᴛ",
-                                       "t.me/fandasupport"),
+                                       "t.me/WikiTapiGroup"),
                             Button.url("ᴄʜᴀɴɴᴇʟ",
-                                       "t.me/fandaproject")],
+                                       "t.me/WikiTapiChannel")],
                         [custom.Button.inline(
                             "ᴏᴘᴇɴ ᴍᴇɴᴜ", data="open_plugin")],
                         [custom.Button.inline(
