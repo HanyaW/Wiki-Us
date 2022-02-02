@@ -68,7 +68,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit(f'**[HEROKU]:**'
-                         f'\n{REPO_NAME} **Lagi di perbarui pler!**\n`Ga lama kok nyet sejam doang wkwkland.`'
+                         f'\n{REPO_NAME} **Lagi di perbarui!**\n`sabar ye org sabar di kasih anu.`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -92,7 +92,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit(f"`{REPO_NAME} Berhasil Di Deploy!`\n" "__Restarting, Sabar nyet.....__")
+            await event.edit(f"`{REPO_NAME} Berhasil Di Deploy!`\n" "__Restarting, Sabar ye.....__")
             await asyncio.sleep(15)
             await event.delete()
 
@@ -127,7 +127,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "» #UPDATER «\n"
-            "**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil di apdet anjass ツ**")
+            "**⚡Wiki-Userbot⚡ Berhasil di update ye ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -215,12 +215,12 @@ async def upstream(event):
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Loading....1%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡,​ Loading....20%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Loading....35%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡​, Loading....77%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡​, Updating...90%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Mohon Tunggu Sebentar....100%`"
+        await event.edit("` Proses Update, Loading....1%`")
+        await event.edit("` Proses Update,​ Loading....20%`")
+        await event.edit("` Proses Update, Loading....35%`")
+        await event.edit("` Proses Update, Loading....77%`")
+        await event.edit("` Proses Update, Updating...90%`")
+        await event.edit("` Proses Update, Mohon Tunggu Sebentar....100%`"
         )
 
     if conf == "now":
@@ -237,9 +237,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru DIOR-UBOT."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru Wiki-Userbot."
     "\n\n.update now"
-    "\nUsage: Memperbarui DIOR-UBOT."
+    "\nUsage: Memperbarui Wiki-Userbot."
     "\n\n.update deploy"
-    "\nUsage: Memperbarui DIOR-UBOT Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui Wiki-Userbot Dengan Cara Deploy Ulang."
 })
