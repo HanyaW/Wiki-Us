@@ -11,9 +11,9 @@ async def _(event):
     if not (reply and (reply.media)):
         await event.edit("`Mohon Balas Ke Sticker`")
         return
-    xx = await event.edit("`Kecilin Tikell!!....`")
+    xx = await event.edit("`Kecilin Tikell, kek harapan kau dapatkan dia!!....`")
     ik = await bot.download_media(reply)
-    im1 = Image.open("userbot/utils/styles/DIORBOT.png")
+    im1 = Image.open("userbot/utils/styles/wiki.png")
     if ik.endswith(".tgs"):
         await event.client.download_media(reply, "ult.tgs")
         os.system("lottie_convert.py ult.tgs json.json")
