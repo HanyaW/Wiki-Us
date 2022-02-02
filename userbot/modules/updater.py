@@ -127,7 +127,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "» #UPDATER «\n"
-            "**⚡Wiki-Userbot⚡ Berhasil di update ye ツ**")
+            "**Wiki-Userbot Berhasil di update ye ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -145,7 +145,7 @@ async def upstream(event):
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
-        txt = "`Yah pembaruan ga bisa dilanjutin pler karena "
+        txt = "`Yah pembaruan ga bisa dilanjutin karena "
         txt += "Beberapa Masalah Terjadi`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
@@ -189,7 +189,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f"\n**{REPO_NAME} Sudah Versi Terbaru Goblok!**\n")
+            f"\n**{REPO_NAME} Sudah Versi Terbaru😑!**\n")
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
@@ -209,7 +209,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond(f"**Perintah untuk memperbarui** {REPO_NAME}\n >`.update one`\n >`.update deploy`\n\n**Report:** @fandasupport")
+        return await event.respond(f"**Perintah untuk memperbarui** {REPO_NAME}\n >`.update one`\n >`.update deploy`\n\n**Report:** @WikiTapiGroup")
 
     if force_update:
         await event.edit(
