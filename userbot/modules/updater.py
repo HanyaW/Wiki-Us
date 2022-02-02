@@ -54,7 +54,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari DIOR-UBOT.`'
+                ' untuk dapat deploy perubahan terbaru dari Wiki-Userbot.`'
             )
             repo.__del__()
             return
@@ -64,7 +64,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy DIOR-UBOT dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy Wiki-Userbot dyno.`'
             )
             return repo.__del__()
         await event.edit(f'**[HEROKU]:**'
@@ -99,7 +99,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "» #BOTUPDATE «\n"
-                "**{REPO_NAME} Berhasil Di Update nyet**")
+                "**{REPO_NAME} Berhasil Di Update**")
 
     else:
         await event.edit('[HEROKU]:'
@@ -140,7 +140,7 @@ async def update(event, repo, ups_rem, ac_br):
 @register(outgoing=True, pattern=r"^.update(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("__Mengecek Pembaruan, Silakan Menunggu pler....__")
+    await event.edit("__Mengecek Pembaruan, Silakan Menunggu....__")
     conf = event.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
